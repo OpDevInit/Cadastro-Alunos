@@ -79,17 +79,17 @@ function addNewRow(stud) {
 
     var emailNode = document.createTextNode(stud.email);
     var cell = newRow.insertCell();
-    cell.className = 'd-none d-sm-table-cell'
+    cell.className = 'd-none d-md-table-cell'
     cell.appendChild(emailNode);
 
     var telNode = document.createTextNode(stud.phone)
     cell = newRow.insertCell();
-    cell.className='d-none d-sm-table-cell'
+    cell.className='d-none d-md-table-cell'
     cell.appendChild(telNode);
 
     var cursoNode = document.createTextNode(courses[stud.course - 1].name);
     cell = newRow.insertCell();
-    cell.className='d-none d-sm-table-cell'
+    cell.className='d-none d-md-table-cell'
     cell.appendChild(cursoNode);
 
     var options = "";
@@ -102,6 +102,6 @@ function addNewRow(stud) {
         options = 'Noite';
     }
     cell = newRow.insertCell();
-    cell.className = 'd-none d-sm-table-cell'
+    cell.className = 'd-none d-md-table-cell'
     cell.innerHTML = options;
 }
